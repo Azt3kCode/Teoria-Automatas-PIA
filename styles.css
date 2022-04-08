@@ -16,20 +16,67 @@ body {
     background: #1f2f3f;
 }
 
+.header {
+    width: 100%;
+    height: 60px;
+    background: #102030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    width: 90%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.section {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.info {
+    width: 48%;
+    height: auto;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
 .container-bg {
     width: 90%;
     height: 200px;
     background-color: #112233;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     overflow: hidden;
     border-radius: 15px;
+    margin: 0 auto;
 }
 
 .container  {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: calc(50% - 50px);
     transform: translateY(-50%);
@@ -37,7 +84,7 @@ body {
 }
 
 .select {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -91,8 +138,8 @@ body {
 }
 
 .btn-container {
-    width: 90%;
-    height: 100px;
+    width: 100%;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,10 +149,10 @@ body {
 
 .btn {
     width: 48%;
-    height: 70px;
+    height: 40px;
     border: none;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     background: none;
 }
@@ -115,11 +162,10 @@ body {
 }
 
 #texto {
-    width: 90%;
-    height: 100px;
-    margin: 0 5%;
+    width: 100%;
+    height: 50px;
     padding: 20px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     border-radius: 15px;
     text-align: center;
