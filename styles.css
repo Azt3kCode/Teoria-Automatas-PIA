@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body {
+    background: #1f2f3f;
+}
+
+.container-bg {
+    width: 90%;
+    height: 200px;
+    background-color: #112233;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container  {
+    position: fixed;
+    top: 50%;
+    left: calc(50% - 50px);
+    transform: translateY(-50%);
+    background: none;
+}
+
+.select {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 130px;
+    border-bottom: 5px solid #3f4f5f;
+    border-top: 5px solid #3f4f5f;
+    border-radius: 15px;
+    background: none;
+    z-index: 1;
+}
+#contenedor {
+    width: auto;
+    display: flex;
+    height: 100px;
+    transition: all 0.5s;
+    background: none;
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    background: #0099ff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    animation: blind 1s ease;
+}
+
+@keyframes blind {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+        background: #0055aa;
+    }
+}
+
+/*Seleccionar los elementos impares*/
+.elemento:nth-child(odd) {
+    background: #0088ee;
+}
+
+.checked  {
+    transform: scale(0.9);
+    opacity: 0.2;
+    background: none;
+}
+
+.btn-container {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: none;
+}
+
+.btn {
+    width: 48%;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+#texto {
+    width: 90%;
+    height: 100px;
+    margin: 0 5%;
+    padding: 20px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    background-color: #112233;
+    color: #fff;
+}
+
+#texto::-webkit-input-placeholder {
+    color: #ffffffaa;
+}
+
+.obtener {
+    background: #00dd99;
+    color: #fff;
+}
+
+.validar {
+    background: #0099ff;
+    color: #fff;
+}
