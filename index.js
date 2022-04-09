@@ -105,8 +105,8 @@ async function validarCadena() {
     await recorrerElementos( contenedor );
    
     // Obtener el valor de n mediante la repeticion de rg en la cadena
-    let n = textoGlobal.match('[a]{1,}') ? texto.value.match('[a]{1,}')[0].length : 0;
-    let m = textoGlobal.match('[b]{1,}') ? texto.value.match('[b]{1,}')[0].length : 0;;  
+    let n = textoGlobal.match('[a]{1,}') ? textoGlobal.match('[a]{1,}')[0].length : 0;
+    let m = textoGlobal.match('[b]{1,}') ? textoGlobal.match('[b]{1,}')[0].length : 0;;  
 
     // Obtener el valor real de m
     m = m - n;

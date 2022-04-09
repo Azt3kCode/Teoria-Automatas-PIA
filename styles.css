@@ -23,7 +23,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .header-container {
@@ -34,6 +33,15 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+.principal {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section {
@@ -58,7 +66,6 @@ body {
     position: relative;
     width: 90%;
     height: auto;
-    background: #112233;
     padding: 20px 0;
     border-radius: 50px 50px 0 0;
     display: flex;
@@ -67,33 +74,57 @@ body {
     margin: 0 auto;
 }
 
-.right, .left {
-    width: 50%;
-    height: 500px;
-}
 .info {
-    margin: 0 5%;
+    width: 350px;
+    height: 350px;
+    background: #112233;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+svg {
+    width: 10%;
+    height: 10%;
+    fill: #0099ff;
+    filter:drop-shadow(0px 0px 10px #0099ff);
+}
+
+ul {
+    width: 100%;
+    margin: 0 2.5%;
 }
 
 .info-title{
     color: #fff;
-    font-size: 1.2rem;
-    margin: 20px 0;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .info-text, sup {
     color: #ffffffaa;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
-.about {
-    color: #0099ff;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: center;
+.liA {
+    color: #00dd99aa;
 }
+
+.liE {
+    color: #eb445aaa;
+}
+
+.accept {
+    color:#00dd99;
+}
+
+.error {
+    color: #eb445a;
+}
+
 .container-bg {
     width: 90%;
     height: 200px;
@@ -198,6 +229,7 @@ body {
 .label {
     color: #0099ff;
     text-align: center;
+    filter:drop-shadow(0px 0px 10px #0099ff);
 }
 
 #texto {
@@ -222,36 +254,61 @@ body {
 .borrar {
     background: #eb445a;
     color: #fff;
-    border-bottom: 7.5px solid #da3349;
+    border-bottom: 5px solid #da3349;
 }
 
 .obtener {
     background: #00dd99;
     color: #fff;
-    border-bottom: 7.5px solid #00aa88;
+    border-bottom: 5px solid #00aa88;
 }
 
 .validar {
     background: #0099ff;
     color: #fff;
-    border-bottom: 7.5px solid #0088ee;
+    border-bottom: 5px solid #0088ee;
 }
 
-/*Cuando la pantalla sea meor a 800 px de ancho*/
+.swal-button {
+    background: #0099ff;
+    color: #fff;
+    border-bottom: 5px solid #0088ee;
+}
+
+.swal-title {
+    color: #333;
+}
+
+.swal-text {
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        width: 90%;
+    }
+
+    .info {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .main {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .left, .right {
+    .info {
         width: 100%;
-        margin: 0 5%;
-        height: auto;
-    }
-
-    h2 {
-        margin-top: 20px;
     }
 }
+
