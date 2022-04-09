@@ -23,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .header-container {
@@ -32,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .section {
@@ -48,12 +49,14 @@ body {
     width: 90%;
     height: auto;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info {
     width: 48%;
     height: auto;
-    
 }
 
 .subtitle {
@@ -73,7 +76,7 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .container  {
@@ -109,6 +112,7 @@ body {
     width: 100px;
     height: 100px;
     background: #0099ff;
+    border-bottom: 7.5px solid #0088ee;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -124,12 +128,14 @@ body {
         opacity: 0;
         transform: translateX(100px);
         background: #0055aa;
+        border-bottom: 7.5px solid #004488;
     }
 }
 
 /*Seleccionar los elementos impares*/
 .elemento:nth-child(odd) {
     background: #0088ee;
+    border-bottom: 7.5px solid #0077dd;
 }
 
 .checked  {
@@ -149,8 +155,8 @@ body {
 }
 
 .btn {
-    width: 48%;
-    height: 40px;
+    width: 32%;
+    height: 50px;
     border: none;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -160,6 +166,12 @@ body {
 
 .btn:hover {
     filter: brightness(0.9);
+    border-bottom: none;
+}
+
+.label {
+    color: #0099ff;
+    text-align: center;
 }
 
 #texto {
@@ -170,23 +182,31 @@ body {
     letter-spacing: 2px;
     border-radius: 15px;
     text-align: center;
-    margin-top: 50px;
     border: none;
     outline: none;
     background-color: #112233;
     color: #fff;
+    margin-top: 10px;
 }
 
 #texto::-webkit-input-placeholder {
     color: #ffffffaa;
 }
 
+.borrar {
+    background: #eb445a;
+    color: #fff;
+    border-bottom: 7.5px solid #da3349;
+}
+
 .obtener {
     background: #00dd99;
     color: #fff;
+    border-bottom: 7.5px solid #00aa88;
 }
 
 .validar {
     background: #0099ff;
     color: #fff;
+    border-bottom: 7.5px solid #0088ee;
 }

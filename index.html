@@ -14,17 +14,19 @@
             Teoria de Áutomatas
         </div>
     </header>
-    <div class="panel">
-        <input type="text" id="texto" placeholder="Escribe algo...">
-        <div class="btn-container">
-            <button onclick="obtenerCadena()" class="btn obtener">Guardar</button>
-            <button onclick="validarCadena()" class="btn validar">Validar</button>
-        </div>
-    </div>
     <div class="container-bg">
         <div class="select"></div>
         <div class="container">
             <div id="contenedor"></div>
+        </div>
+    </div>
+    <div class="panel">
+        <label for="texto" class="label">Ingresa una cadena aquí</label>
+        <input type="text" id="texto" placeholder="aabbb...">
+        <div class="btn-container">
+            <button onclick="borrarCadena()" class="btn borrar">Borrar</button>
+            <button onclick="obtenerCadena()" class="btn obtener">Guardar</button>
+            <button onclick="validarCadena()" class="btn validar">Validar</button>
         </div>
     </div>
     <script src="index.js"></script>
